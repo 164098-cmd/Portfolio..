@@ -1,1 +1,183 @@
+<!DOCTYPE 
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO - Pongsakon Puphalo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kku: {
+                            dark: '#5C2605',
+                            main: '#9A4612',
+                            gold: '#E08232',
+                            soft: '#FFF9F2'
+                        }
+                    },
+                    fontFamily: {
+                        thai: ['"Sarabun"', 'sans-serif'],
+                        head: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .border-kku { border: 2px solid #E08232; }
+            .line-kku { height: 2px; background: linear-gradient(90deg, transparent, #E08232, transparent); }
+            .text-kku-gradient { background: linear-gradient(90deg, #5C2605, #E08232); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-kku-dark font-thai">
+
+    <!-- เมนูแถบด้านบน -->
+    <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-md bg-kku-main text-white flex items-center justify-center font-bold">KKU</div>
+                <span class="text-xl font-head font-bold text-kku-dark">PORTFOLIO</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#top" class="hover:text-kku-gold transition-colors">หน้าแรก</a>
+                <a href="#about" class="hover:text-kku-gold transition-colors">ข้อมูลส่วนตัว</a>
+                <a href="#sop" class="hover:text-kku-gold transition-colors">เจตจำนง</a>
+                <a href="#contact" class="hover:text-kku-gold transition-colors">ติดต่อ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ส่วนหัวหลัก -->
+    <section id="top" class="pt-32 pb-20 bg-kku-soft">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center" data-aos="fade-up">
+                <div class="w-52 h-64 mx-auto mb-8 rounded-xl border-kku p-1 shadow-xl overflow-hidden bg-white">
+                    <!-- 📸 อัปโหลดรูปทับไฟล์ profile.jpg ได้เลย -->
+                    <img src="profile.jpg" alt="รูปประจำตัว" class="w-full h-full object-cover rounded-lg">
+                </div>
+                
+                <h1 class="text-[clamp(2.2rem,5vw,3.5rem)] font-head font-bold text-kku-dark mb-2">นายพงศกร ปุผาโล</h1>
+                <p class="text-xl text-kku-main mb-4">Pongsakon Puphalo</p>
+                <div class="line-kku w-48 mx-auto mb-6"></div>
+                
+                <p class="text-lg font-medium mb-2">คณะนิติศาสตร์</p>
+                <p class="text-base text-kku-dark/80 mb-1">สาขาวิชา นิติศาสตร์</p>
+                <p class="text-base text-kku-dark/80 mb-1">หลักสูตร นิติศาสตรบัณฑิต (น.บ.)</p>
+                <p class="text-lg font-semibold text-kku-gold mt-4">มหาวิทยาลัยขอนแก่น</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ข้อมูลส่วนตัว -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto" data-aos="fade-up">
+                <h2 class="text-2xl font-head font-bold text-kku-dark mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-user text-kku-gold"></i> ข้อมูลส่วนตัว
+                </h2>
+                <div class="bg-white border-kku rounded-xl p-6 shadow-lg">
+                    <div class="space-y-3 text-lg">
+                        <div class="flex justify-between border-b border-kku-gold/10 pb-2">
+                            <span class="font-medium text-kku-main">ชื่อ-นามสกุล</span>
+                            <span>นายพงศกร ปุผาโล</span>
+                        </div>
+                        <div class="flex justify-between border-b border-kku-gold/10 pb-2">
+                            <span class="font-medium text-kku-main">ชื่อภาษาอังกฤษ</span>
+                            <span>Pongsakon Puphalo</span>
+                        </div>
+                        <div class="flex justify-between border-b border-kku-gold/10 pb-2">
+                            <span class="font-medium text-kku-main">คณะที่สมัคร</span>
+                            <span>นิติศาสตร์</span>
+                        </div>
+                        <div class="flex justify-between border-b border-kku-gold/10 pb-2">
+                            <span class="font-medium text-kku-main">สาขาวิชา</span>
+                            <span>นิติศาสตร์</span>
+                        </div>
+                        <div class="flex justify-between border-b border-kku-gold/10 pb-2">
+                            <span class="font-medium text-kku-main">มหาวิทยาลัย</span>
+                            <span>ขอนแก่น</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium text-kku-main">หลักสูตร</span>
+                            <span>นิติศาสตรบัณฑิต</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- เจตจำนง -->
+    <section id="sop" class="py-20 bg-kku-soft">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="text-2xl font-head font-bold text-kku-dark mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-file-signature text-kku-gold"></i> Statement of Purpose
+                </h2>
+                <div class="bg-white border-kku rounded-xl p-6 md:p-8 shadow-lg">
+                    <p class="text-lg leading-relaxed mb-4">
+                        “กฎหมายไม่ใช่เพียงตัวบทที่กำหนดความถูกผิด แต่เป็นเครื่องมือสำคัญในการสร้างความเป็นธรรมให้เกิดขึ้นในสังคม” ความคิดนี้เป็นจุดเริ่มต้นที่ทำให้ข้าพเจ้าสนใจศึกษาต่อด้านนิติศาสตร์ เพราะข้าพเจ้าเชื่อว่าผู้ที่มีความรู้ทางกฎหมายสามารถนำความรู้ไปช่วยเหลือผู้อื่น แก้ไขปัญหาความขัดแย้ง และเป็นส่วนหนึ่งในการพัฒนาสังคมให้ดีขึ้น
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        ตลอดช่วงการศึกษาในระดับมัธยมศึกษา ข้าพเจ้าได้มีโอกาสเข้าร่วมกิจกรรมที่ส่งเสริมทักษะด้านกฎหมายและการทำงานเพื่อส่วนรวม ไม่ว่าจะเป็นการแข่งขันตอบปัญหากฎหมาย การเข้าร่วมกิจกรรมที่เกี่ยวข้องกับกระบวนการยุติธรรม รวมถึงการจัดทำผลงานด้านกฎหมายผ่านกิจกรรมต่าง ๆ ประสบการณ์เหล่านี้ทำให้ข้าพเจ้าได้ฝึกการคิดวิเคราะห์ การใช้เหตุผล และการมองปัญหาอย่างรอบด้าน ซึ่งเป็นทักษะสำคัญสำหรับการศึกษาด้านนิติศาสตร์
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        นอกจากด้านวิชาการ ข้าพเจ้ายังได้รับโอกาสทำงานในสภานักเรียน โดยรับผิดชอบด้านประชาสัมพันธ์ การวางแผนกิจกรรม และการทำงานร่วมกับผู้อื่น รวมถึงได้รับหน้าที่เป็นวิทยากรแนะแนวการศึกษาต่อให้กับน้องนักเรียนจำนวน 5 โรงเรียน และเป็นวิทยากรในการอบรมด้านภาวะผู้นำ ประสบการณ์เหล่านี้ทำให้ข้าพเจ้าได้พัฒนาทักษะการสื่อสาร ความรับผิดชอบ และความกล้าแสดงความคิดเห็น ซึ่งเป็นคุณสมบัติที่ข้าพเจ้าเชื่อว่าจะสามารถนำไปต่อยอดในการเรียนกฎหมายได้
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        เหตุผลที่ข้าพเจ้ามีความมุ่งมั่นสมัครเข้าศึกษาต่อคณะนิติศาสตร์ มหาวิทยาลัยขอนแก่น เนื่องจากข้าพเจ้าต้องการศึกษากฎหมายอย่างเป็นระบบ และพัฒนาตนเองให้มีความรู้ ความสามารถในการวิเคราะห์ข้อกฎหมาย รวมถึงสามารถนำความรู้ไปใช้ให้เกิดประโยชน์ต่อประชาชนและสังคม โดยเฉพาะการเป็นบุคลากรด้านกฎหมายที่ยึดมั่นในความถูกต้องและความยุติธรรม
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        หากได้รับโอกาสเข้าศึกษาในคณะนิติศาสตร์ มหาวิทยาลัยขอนแก่น ข้าพเจ้าจะตั้งใจศึกษา เรียนรู้ และพัฒนาตนเองอย่างเต็มความสามารถ พร้อมทั้งเข้าร่วมกิจกรรมต่าง ๆ ของมหาวิทยาลัย เพื่อสร้างประสบการณ์และเตรียมความพร้อมสู่การเป็นนักกฎหมายที่มีคุณธรรม มีความรับผิดชอบ และสามารถสร้างประโยชน์ให้แก่สังคมในอนาคต
+                    </p>
+                    <div class="mt-8 text-right">
+                        <p class="text-kku-gold font-head text-lg tracking-wider">— PONGSKON PUPHALO ⚖️ —</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ติดต่อ -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-md mx-auto" data-aos="fade-up">
+                <h2 class="text-2xl font-head font-bold text-kku-dark mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-address-book text-kku-gold"></i> ช่องทางการติดต่อ
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-white border-kku rounded-xl p-4 shadow-md">
+                        <i class="fa-solid fa-phone text-kku-gold"></i>
+                        <span>062-271-1531</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white border-kku rounded-xl p-4 shadow-md">
+                        <i class="fa-brands fa-instagram text-kku-gold"></i>
+                        <span>@pupllo_.s</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ท้ายสุด -->
+    <footer class="bg-kku-dark text-white py-6 text-center text-sm">
+        <p>&copy; 2026 PONGSKON PUPHALO | PORTFOLIO FOR ADMISSION</p>
+        <p class="mt-1 text-white/60">คณะนิติศาสตร์ มหาวิทยาลัยขอนแก่น</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 1000 });</script>
+</body>
+</html>
